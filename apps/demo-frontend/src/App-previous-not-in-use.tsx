@@ -91,7 +91,7 @@ const App: React.FC<Props> = ({ assetMap }) => {
               </svg>
             </a>
           </div>
-          <h1 className='text-6xl mt-6'>Vite + React</h1>
+          <h1 className='text-6xl mt-6'>Vite + React + blahhh</h1>
           <div className='content-center justify-items-center mt-6'>
             <button className="place-self-center bg-blue-500 hover:bg-blue-400 text-white py-2 px-4 rounded-sm " onClick={() => setCount((count) => count + 1)}>
               count is {count}
