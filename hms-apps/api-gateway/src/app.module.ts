@@ -14,15 +14,15 @@ import { join } from 'path';
 console.log("dir", __dirname);
 @Module({
   imports: [
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../..', 'users-demo-frontend', 'dist'),
-    }),
     EmployeesModule,
     PatientsModule,
     ClinicsModule,
     PharmaciesModule,
     AuthModule,
     UsersModule,
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, '../../..', 'users-demo-frontend', 'dist'),
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
