@@ -47,7 +47,7 @@ private readonly userRepository: Repository<User>){}
       isPrimaryEmailAddressVerified: false,
       id: '',
       backupEmailAddress: '',
-      phone: ''
+      phone: {}
     }
 
     return userProps
@@ -60,7 +60,7 @@ private readonly userRepository: Repository<User>){}
     const userProps: UserProps[] = users.map((user) => ({
       ...user,
       
-      phone: '',
+      phone: {},
       isPrimaryEmailAddressVerified: false,
       isBackupEmailAddressVerified: false,
       backupEmailAddress: '',
@@ -76,7 +76,7 @@ private readonly userRepository: Repository<User>){}
     const userProps: UserProps = {
       ...user,
       
-      phone: '',
+      phone: {},
       isPrimaryEmailAddressVerified: false,
       isBackupEmailAddressVerified: false,
     };
@@ -105,7 +105,7 @@ private readonly userRepository: Repository<User>){}
 
     const userProps: UserProps = {
       ...newUser,
-      phone: '',
+      phone: {},
       isPrimaryEmailAddressVerified: false,
       isBackupEmailAddressVerified: false,
     };
@@ -126,7 +126,7 @@ private readonly userRepository: Repository<User>){}
 
     const userProps: UserProps = {
       ...removedUser,
-      phone: '',
+      phone: {},
       isPrimaryEmailAddressVerified: false,
       isBackupEmailAddressVerified: false,
     };
@@ -163,7 +163,7 @@ async findOneUserByPrimaryEmailAddress(
 
     const userProps: UserProps = {
       ...user,
-      phone: '',
+      phone: {},
       isPrimaryEmailAddressVerified: false,
       isBackupEmailAddressVerified: false,
     };
