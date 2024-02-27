@@ -11,7 +11,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { join } from 'path';
 
-console.log("dir", __dirname);
+// console.log("dir", __dirname);
 @Module({
   imports: [
     EmployeesModule,
@@ -21,7 +21,8 @@ console.log("dir", __dirname);
     AuthModule,
     UsersModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../../..', 'users-demo-frontend', 'dist'),
+      rootPath: join(__dirname, '../../../..', 'users-demo-frontend', 'dist'),
+      exclude: ['/api*'],
     }),
   ],
   controllers: [AppController],
